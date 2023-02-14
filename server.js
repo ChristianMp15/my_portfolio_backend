@@ -27,6 +27,11 @@ app.get("/about", (req, res) => {
   res.json(about);
 });
 
+//route to link to github
+app.get("/github", (req, res) =>{
+  res.json(github);
+})
+
 //declare a variable for our port number
 const PORT = process.env.PORT || 4500;
 
